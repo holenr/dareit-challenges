@@ -13,7 +13,7 @@ import com.dareit.challenge5.springboot.model.Address;
 @RestController
 public class AddressController {
 
-	@Autowired
+	@Autowired // TODO dont use autowired, use ctor injection instead
 	private AddressData addressData;
 
 	@RequestMapping("/addresses")
