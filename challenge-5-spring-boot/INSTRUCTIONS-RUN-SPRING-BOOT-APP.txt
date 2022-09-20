@@ -1,0 +1,27 @@
+How to run a SpringBoot app:
+
+1.) From within Eclipse:
+
+ - make sure idk-17 (java 17) or higher is the default idk
+ - file -> import -> Maven/Existing Maven Projects -> Next -> Browse -> Project Folder -> Finish 
+ - select the 'main' project file file containing the main() method, e.g. "MyApp.java", open editor window for this file:
+ - right click in the editor window of the file -> Run as -> Java Application
+
+
+2.) From within another terminal window:
+
+ - make sure java-17 or higher is installed and set as the default.
+ - make sure no program (server) is not running anywhere else already.
+ - go to project folder root and run: 
+       ./mvnw spring-boot:run
+
+
+3.) Run jar file from a terminal window:
+
+ - make sure java-17 or higher is installed and set as the default.
+ - make sure no program (server) is not running anywhere else already.
+ - open a terminal window and cd to: project-name/target
+ - run:
+       java -jar project-name-0.0.1-SNAPSHOT.jar      
+
+
