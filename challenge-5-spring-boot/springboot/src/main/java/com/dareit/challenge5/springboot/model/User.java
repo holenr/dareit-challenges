@@ -1,4 +1,4 @@
-package com.dareit.challenge5.springboot;
+package com.dareit.challenge5.springboot.model;
 
 public class User {
 
@@ -37,7 +37,6 @@ public class User {
 		this.lastName = lastName;
 	}
 
-
 	public Address getAddress() {
 		return address;
 	}
@@ -50,9 +49,5 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + "]";
 	}
-
-
-
-
 
 }

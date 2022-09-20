@@ -1,19 +1,29 @@
-package com.dareit.challenge5.springboot;
+package com.dareit.challenge5.springboot.model;
 
 public class Address {
 
+	private int userId;
 	private String streetName;
 	private int streetNumber;
 	private int areaCode;
 	private String city;
 	private String country;
 
-	public Address(String streetName, int streetNumber, int areaCode, String city, String country) {
+	public Address(int userId, String streetName, int streetNumber, int areaCode, String city, String country) {
+		this.userId = userId;
 		this.streetName = streetName;
 		this.streetNumber = streetNumber;
 		this.areaCode = areaCode;
 		this.city = city;
 		this.country = country;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getStreetName() {
@@ -58,11 +68,8 @@ public class Address {
 
 	@Override
 	public String toString() {
-		return "Address [streetName=" + streetName + ", streetNumber=" + streetNumber + ", areaCode=" + areaCode
-				+ ", city=" + city + ", country=" + country + "]";
+		return "Address [userId=" + userId + ", streetName=" + streetName + ", streetNumber=" + streetNumber
+				+ ", areaCode=" + areaCode + ", city=" + city + ", country=" + country + "]";
 	}
-
-
-
 
 }
