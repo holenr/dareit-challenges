@@ -2,7 +2,10 @@ package com.dareit.challenge5.springboot.model;
 
 public class Address {
 
-	private int userId;
+	//PK
+	private Long id;
+
+	private int userId; // TODO primitive type
 	private String streetName;
 	private int streetNumber;
 	private int areaCode;
